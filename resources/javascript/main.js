@@ -32,21 +32,25 @@ const imageToChangeTwo = document.getElementById("What-I-Actually-Look-Like-Imag
 const changeImageOne = (event) => {
 event.target.style.backgroundImage = "url('resources/img/Superman-Flying/res-mipmap/mipmap-xxxhdpi/SupermanInAction.jpg')";
 console.log("Mouse down on image one");
+event.target.style.transition = "background-image 0.75s ease-in-out";
 };
 
 const revertImageOne = (event) => {
 event.target.style.backgroundImage = "url('resources/img/Me/res-mipmap/mipmap-xxxhdpi/What-I-Look-Like-In-My-Head.jpg')";
 console.log("Mouse up on image one");
+event.target.style.transition = "background-image 0.75s ease-in-out";
 };
 
 const changeImageTwo = (event) => {
     event.target.style.backgroundImage = "url('resources/img/Playing-Playstation/res-mipmap/mipmap-xxxhdpi/PlayingPlaystation.jpg')";
     console.log("Mouse down on image two");
+    event.target.style.transition = "background-image 0.75s ease-in-out";
 };
 
 const revertImageTwo = (event) => {
     event.target.style.backgroundImage = "url('resources/img/Actual-Me/res-mipmap/mipmap-xxxhdpi/Actual Me Anon.jpg')";
     console.log("Mouse up on image two");
+    event.target.style.transition = "background-image 0.75s ease-in-out";
 };
 
 imageToChangeOne.addEventListener("mousedown", changeImageOne);

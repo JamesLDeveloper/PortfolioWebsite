@@ -58,3 +58,42 @@ imageToChangeOne.addEventListener("mouseup", revertImageOne);
 
 imageToChangeTwo.addEventListener("mousedown", changeImageTwo);
 imageToChangeTwo.addEventListener("mouseup", revertImageTwo);
+
+
+const images = document.querySelectorAll('.hover-enlarge');
+        const overlay = document.querySelector('.enlarged-image-overlay');
+        const enlargedImage = document.querySelector('.enlarged-image');
+        const closeButton = document.getElementById('close-button');
+
+        images.forEach((image) => {
+            image.addEventListener('click', (event) => {
+                // Show the overlay and set the enlarged image source
+                overlay.style.display = 'flex';
+                enlargedImage.src = event.target.src;
+
+                setTimeout(() => {
+                    overlay.style.opacity = 1;
+                    enlargedImage.style.transform = 'scale(1)';
+                }, 20);
+            });
+        });
+
+        closeButton.addEventListener('click', () => {
+            // Hide the overlay when the close button is clicked
+            overlay.style.opacity = 0;
+            enlargedImage.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                overlay.style.display = "none";
+            }, 600);
+        });
+
+        // Close the overlay when clicking outside the image
+        overlay.addEventListener('click', (event) => {
+            if (event.target === overlay) {
+                overlay.style.opacity = "0";
+                enlargedImage.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    overlay.style.display = "none";
+                }, 600);
+            }
+        });

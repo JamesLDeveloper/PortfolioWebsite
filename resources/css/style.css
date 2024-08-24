@@ -75,8 +75,17 @@ body {
     flex-shrink: 1;
 }
 
+.JDL-Software-Development-Logo {
+    display: block;
+    background-image: url('../img/navbar-icons/android-chrome-512x512.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
 .JDL-Software-Development-Logo-Text {
-padding: 0;
+padding: 0 0 0 0.5rem;
 margin: 0;
 align-self: center;
 }
@@ -205,6 +214,7 @@ padding: 0 0 0.5rem 0;
 .Project-Grid li img {
     width: 100%;
     height: auto;
+    background-size: contain;
 }
 
 .enlarged-image-overlay {
@@ -231,10 +241,8 @@ padding: 0 0 0.5rem 0;
     display: grid;
     list-style-type: none;
     grid-gap: 0.75rem 2rem;
-    grid-template-columns: 6rem;
-    grid-auto-columns: 6rem;
+    grid-template-columns: repeat(16, 6rem);
     grid-template-rows: 3rem 1.5rem;
-    grid-auto-rows: 3rem 2rem;
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
@@ -282,4 +290,511 @@ padding: 0 0 0.5rem 0;
     list-style: none;
     text-decoration: none;
     font-size: 0.75rem;
+}
+
+.sr-only {
+    position: absolute;
+    right: 10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 2559px) {
+
+.project-picture-hidden {
+display: none;
+}
+
+.project-picture-hidden-two {
+    display: none;
+    }
+
+.Project-Grid {
+    display: grid;
+    width: 45%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-gap: 20px 10px;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    padding: 1rem;
+    border: solid 0.25rem black;
+
+}
+
+
+}
+
+@media only screen and (max-width: 1439px) {
+    
+body {
+    width: 100%;
+}
+
+.navbar-container {
+    width: 100%;
+}
+
+.logo-container {
+    flex-basis: 60%;
+}
+
+
+.navbar-ul {
+    flex-basis: 40%;
+}
+
+.skills-bar-ul {
+    display: grid;
+    list-style-type: none;
+    grid-gap: 0.75rem 2rem;
+    grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
+    grid-template-rows: 3rem 2.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    grid-auto-flow: column;
+} 
+
+
+}
+
+@media only screen and (max-width: 1027px) {
+    .logo-container {
+        flex-basis: 55%;
+    }
+
+
+    .navbar-ul {
+        flex-basis: 45%;
+    }
+
+    .About-Me-Images-Container {
+        flex-wrap: wrap;
+    }
+
+    .What-I-Think-I-Look-Like-Text-And-Image {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    }
+    
+    .What-I-Think-I-Look-Like-Text {
+    width: 100%;
+    padding: 0 0 0.5rem 0;
+    }
+    
+    .What-I-Think-I-Look-Like-Image {
+        background-image: url('../img/Me/res-mipmap/mipmap-xxxhdpi/Generic-Superhero-One.png');
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .What-I-Actually-Look-Like-Text-And-Image {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        }
+    
+    .What-I-Actually-Look-Like-Text {
+        width: 100%;
+        padding: 0 0 0.5rem 0;
+    }
+    
+    .What-I-Actually-Look-Like-Image {
+        background-image: url('../img/Actual-Me/res-mipmap/mipmap-xxxhdpi/Actual Me Anon.jpg');
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 880px) {
+
+    .About-Me-Text-And-Image {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .About-Me-Text {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .About-Me-Images-Container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .What-I-Think-I-Look-Like-Text-And-Image {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 45%;
+        }
+    
+    .What-I-Think-I-Look-Like-Text {
+    flex-basis: 40%;
+    padding: 0 0 0.5rem 0;
+    }
+    
+    .What-I-Think-I-Look-Like-Image {
+        background-image: url('../img/Me/res-mipmap/mipmap-xxxhdpi/Generic-Superhero-One.png');
+        flex-basis: 50%;
+        border-radius: 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .What-I-Actually-Look-Like-Text-And-Image {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 45%;
+        }
+    
+    .What-I-Actually-Look-Like-Text {
+        flex-basis: 40%;
+        padding: 0 0 0.5rem 0;
+    }
+    
+    .What-I-Actually-Look-Like-Image {
+        background-image: url('../img/Actual-Me/res-mipmap/mipmap-xxxhdpi/Actual Me Anon.jpg');
+        flex-basis: 50%;
+        border-radius: 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+        .Project-Grid {
+            display: grid;
+            width: 45%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.75fr 2fr;
+            grid-gap: 20px 10px;
+            list-style-type: none;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-inline-start: 0;
+            padding: 1rem;
+            border: solid 0.25rem black;
+        
+        }
+
+    .skills-bar-ul {
+        display: grid;
+        list-style-type: none;
+        grid-gap: 0.75rem 1.5rem;
+        grid-template-columns: 6rem 6rem 6rem 6rem;
+        grid-template-rows: 3rem 2.5rem 3rem 2.5rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        grid-auto-flow: column;
+    } 
+
+}
+
+
+@media only screen and (max-width: 491px) {
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        height: 2rem;
+    
+    }
+    
+    .logo-container {
+        flex-basis: 30%;
+        display: flex;
+        padding: 0 0.5rem;
+        margin: 0;
+    }
+    
+    .JDL-Software-Development-Logo-Text {
+        display: none;
+        }
+
+    .navbar-ul {
+        flex-basis: 70%;
+        display: flex;
+        padding: 0 0.5rem;
+        margin: 0;
+        justify-content: space-between;
+    }
+    
+    .navbar-ul li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        align-self: center;
+    
+    }
+
+
+    .Button-Image-Home {
+        display: block;
+        background-image: url('../img/navbar-icons/home.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .Button-Text-Home {
+        display: none;
+    }
+
+    .Button-Image-Contact {
+        display: block;
+        background-image: url('../img/navbar-icons/contact.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .Button-Text-Contact {
+        display: none;
+    }
+
+    .Button-Image-AboutMe {
+        display: block;
+        background-image: url('../img/navbar-icons/aboutme.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .Button-Text-AboutMe {
+        display: none;
+    }
+
+    .Button-Image-Projects {
+        display: block;
+        background-image: url('../img/navbar-icons/projects.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .Button-Text-Projects {
+        display: none;
+    }
+
+    .Button-Image-Skills {
+        display: block;
+        background-image: url('../img/navbar-icons/skills.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .Button-Text-Skills {
+        display: none;
+    }
+    
+    .About-Me-Text-And-Image {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .About-Me-Text {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .About-Me-Images-Container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .What-I-Think-I-Look-Like-Text-And-Image {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row-reverse;
+        }
+    
+    .What-I-Think-I-Look-Like-Text {
+    flex-basis: 40%;
+    padding: 0 0 2rem 0;
+    }
+    
+    .What-I-Think-I-Look-Like-Image {
+        background-image: url('../img/Me/res-mipmap/mipmap-xxxhdpi/Generic-Superhero-One.png');
+        flex-basis: 60%;
+        border-radius: 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    
+    .What-I-Actually-Look-Like-Text-And-Image {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row-reverse;
+        }
+    
+    .What-I-Actually-Look-Like-Text {
+        flex-basis: 40%;
+        padding: 0 0 2rem 0;
+    }
+    
+    .What-I-Actually-Look-Like-Image {
+        background-image: url('../img/Actual-Me/res-mipmap/mipmap-xxxhdpi/Actual Me Anon.jpg');
+        flex-basis: 60%;
+        border-radius: 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+    .grids {
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .grids a {
+        font-size: 1.4rem;
+    }
+    
+    .Row-Of-Grids {
+        display: flex;
+        width: 100%;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-picture-hidden-three {
+        display: none;
+    }
+    
+    .Project-Grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px 10px;
+        list-style-type: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        padding: 1rem;
+        border: solid 0.1rem black;
+    
+    }
+    
+    .project-picture-portrait {
+        grid-row-start: 0;
+        grid-row-end: span 4;
+    }
+    
+    .Project-Grid li img {
+        width: 100%;
+        height: auto;
+        background-size: contain;
+    }
+
+
+
+    .skills-bar-ul {
+        display: grid;
+        list-style-type: none;
+        grid-gap: 0.75rem 2rem;
+        grid-template-columns: 6rem 6rem 6rem;
+        grid-template-rows: 3rem 2.5rem 3rem 2.5rem 3rem 2.5rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        grid-auto-flow: column;
+    } 
+
+}
+
+@media only screen and (max-width: 361px) {
+
+
+    .What-I-Think-I-Look-Like-Image {
+        background-image: url('../img/Me/res-mipmap/mipmap-xxxhdpi/Generic-Superhero-One.png');
+        flex-basis: 50%;
+        border-radius: 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+
+    .What-I-Actually-Look-Like-Image {
+        background-image: url('../img/Actual-Me/res-mipmap/mipmap-xxxhdpi/Actual Me Anon.jpg');
+        flex-basis: 50%;
+        border-radius: 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .Project-Grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px 10px;
+        list-style-type: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        padding: 1rem;
+        border: solid 0.1rem black;
+    
+    }
+
+
+
+    .skills-bar-ul {
+        display: grid;
+        list-style-type: none;
+        grid-gap: 0.75rem 1.0rem;
+        grid-template-columns: 6rem 6rem 6rem;
+        grid-template-rows: 3rem 2.5rem 3rem 2.5rem 3rem 2.5rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        grid-auto-flow: column;
+    } 
+
+
+
 }

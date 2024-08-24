@@ -30,13 +30,13 @@ const imageToChangeOne = document.getElementById("What-I-Think-I-Look-Like-Image
 const imageToChangeTwo = document.getElementById("What-I-Actually-Look-Like-Image");
 
 const changeImageOne = (event) => {
-event.target.style.backgroundImage = "url('resources/img/Superman-Flying/res-mipmap/mipmap-xxxhdpi/SupermanInAction.jpg')";
+event.target.style.backgroundImage = "url('resources/img/Superman-Flying/res-mipmap/mipmap-xxxhdpi/Generic-Superhero-One-In-Action.png')";
 console.log("Mouse down on image one");
 event.target.style.transition = "background-image 0.75s ease-in-out";
 };
 
 const revertImageOne = (event) => {
-event.target.style.backgroundImage = "url('resources/img/Me/res-mipmap/mipmap-xxxhdpi/What-I-Look-Like-In-My-Head.jpg')";
+event.target.style.backgroundImage = "url('resources/img/Me/res-mipmap/mipmap-xxxhdpi/Generic-Superhero-One.png')";
 console.log("Mouse up on image one");
 event.target.style.transition = "background-image 0.75s ease-in-out";
 };

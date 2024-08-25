@@ -231,11 +231,30 @@ padding: 0 0 0.5rem 0;
     transition: opacity 0.6s ease;
 }
 
-.enlarged-image {
-    max-width: 80%; /* Adjust as needed */
-    max-height: 80vh; /* Adjust as needed */
+.enlarged-image-container {
+    max-width: 90%; /* Adjust as needed */
+    max-height: 90vh; /* Adjust as needed */
     transition: transform 0.6s ease;
 }
+
+.enlarged-image {
+max-width: 90%;
+max-height: 90vh;
+}
+
+.close-button {
+    position:relative;
+    bottom: -100000px;
+    left: -100000px;
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 
 .skills-bar-ul {
     display: grid;
@@ -300,6 +319,7 @@ padding: 0 0 0.5rem 0;
     height: 1px;
     overflow: hidden;
 }
+
 
 @media only screen and (max-width: 2559px) {
 
